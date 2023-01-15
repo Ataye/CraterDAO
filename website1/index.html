@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Crater DAO</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+
+        <style>
+            /* body, html {
+                background: #342e57;
+            }
+            body {
+                background:fixed url('./elements/bg-top.jpg');
+            } */
+
+            .container {
+              max-width: 1200px;
+            }
+
+            html,
+            body {
+                height: 100%;
+                /* background-color: #342e57; */
+                background-color: #000;
+                color: rgb(79, 79, 79);
+            }
+
+            /* body {
+                display: -ms-flexbox;
+                display: flex;
+                color: rgb(88, 88, 88);
+                text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+                box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+            } */
+
+            .cover-container {
+              max-width: 42em;
+            }
+
+            header {
+              /* margin: 50px; */
+              color: #fff;
+              padding-top: 100px;
+            }
+
+            /*
+            * Cover
+            */
+            /* .cover {
+              padding: 0 1.5rem;
+            }
+            .cover .btn-lg {
+              padding: .75rem 1.25rem;
+                font-weight: 700;
+            } */
+
+            .content-top {
+                background: url('./elements/fg-top.png') top center no-repeat;
+                padding-top: 200px;
+                /* padding-left: 50px;
+                padding-right: 50px; */
+                min-height: 660px;
+            }
+
+            .content {
+              background-color: #443fa2;
+              padding-bottom: 50px;
+              color: #fff
+            }
+            .content2 {
+              background-color: #f3f1e4;
+              padding-top: 50px;
+              padding-bottom: 50px;
+            }
+
+            footer {
+              background: url('./elements/bg-bottom.jpg') fixed bottom center no-repeat;
+              min-height: 522px;
+            }
+
+            .footer-inner {
+              background: url('./elements/fg-bottom.png') bottom center no-repeat;
+              min-height: 522px;
+
+            }
+
+            .navbar {
+              background-color: rgba(0, 0, 0, 0.4);
+            }
+            .navbar-brand, .nav-link, .nav-link.active {
+              color: #fff;
+            }
+
+            .glow {
+              /* color: #fd84e1; */
+              text-align: center;
+              /* -webkit-animation: glow 1s ease-in-out infinite alternate; */
+              /* -moz-animation: glow 1s ease-in-out infinite alternate; */
+              /* animation: glow 1s ease-in-out infinite alternate; */
+              text-shadow: 0 0 10px #fff;
+            }
+            /* @-webkit-keyframes glow {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+              }
+              to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+              }
+            } */
+        </style>
+    </head>
+
+  <body>
+
+    <div class="container p-0 pt-4" style="background:fixed url('./elements/bg-top.jpg') top center;">
+
+      <nav id="navbar_top" class="navbar bg-body-tertiary d-none">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Page 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page 2</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <nav id="navbar_top" class="navbar bg-body-tertiary text-dark d-none" style="color:#fff;">
+        <div class="container-fluid">
+          <div class="container">
+            <a class="navbar-brand" href="#">CraterDAO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </nav> -->
+
+      <header class="text-center">
+        <h1 class="display-1 text-center">CraterDAO</h1>
+        <div class="lead"><i>Crypto For Good!</i></div>
+      </header>
+
+
+      <div class="content-top">
+        <div class="row justify-content-center pt-4">
+          <div class="col-6">
+            <h3 class="glow">
+              CraterDAO, as an upstart, was created with the goal of being an effective, efficient, and productive entity that stood in the way of any future occurrences of avoidable-loss.
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="content pt-4">
+        <div class="row justify-content-center">
+          <div class="col-8">
+
+            <h2>Some NFTs on Opensea</h2>
+
+            <div class="row mt-4">
+              <div class="col">
+                <nft-card
+                contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+                tokenId="103585486754356315769129616507038656000299018771773154543038583250115536879617">
+                </nft-card>
+              </div>
+            </div>
+            
+            <div class="row mt-4">
+              <div class="col">
+                <nft-card
+                contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+                tokenId="103585486754356315769129616507038656000299018771773154543038583245717490368513">
+                </nft-card>
+              </div>
+            </div>
+            
+    
+
+    
+
+            
+
+
+          </div>
+        </div>
+        
+      </div>
+
+
+      <div class="content2">
+        <div class="row justify-content-center">
+          <div class="col-8">
+
+            <h2>Send us Something</h2>
+
+            <div class="card">
+              <div class="card-body">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                  <!--Grid row-->
+                  <div class="row">
+  
+                      <!--Grid column-->
+                      <div class="col-md-6">
+                          <div class="md-form mb-0">
+                            <label for="name" class="">Your name</label>
+                            <input type="text" id="name" name="name" class="form-control">
+                              
+                          </div>
+                      </div>
+                      <!--Grid column-->
+  
+                      <!--Grid column-->
+                      <div class="col-md-6">
+                          <div class="md-form mb-0">
+                            <label for="email" class="">Your email</label>
+                            <input type="text" id="email" name="email" class="form-control">
+                              
+                          </div>
+                      </div>
+                      <!--Grid column-->
+  
+                  </div>
+                  <!--Grid row-->
+  
+                  <!--Grid row-->
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="md-form mb-0">
+                            <label for="subject" class="">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <!--Grid row-->
+  
+                  <!--Grid row-->
+                  <div class="row">
+  
+                      <!--Grid column-->
+                      <div class="col-md-12">
+  
+                          <div class="md-form">
+                            <label for="message">Your message</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                              
+                          </div>
+  
+                      </div>
+                  </div>
+                  <!--Grid row-->
+  
+              </form>
+
+              <div class="text-center text-md-left mt-3">
+                <a class="btn btn-primary">Send</a>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <footer class="position-relative">
+        <div class="footer-inner">
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <div class="pt-4 position-relative">
+                
+                <div class="row mt-5">
+                  <div class="col text-center mt-3">
+
+                    <a href="https://discord.gg/8KrBydgUnj" target="_blank" style="color:inherit">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                        <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                      </svg>
+                    </a>
+                    
+                  </div>
+                </div>
+
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="position-absolute bottom-0 start-50 translate-middle-x">
+          <small style="color:#fff;">copyright &copy; 2023 CraterDAO</small>
+        </div>
+      </footer>
+
+      <!-- <footer class="position-relative">
+        <div class="footer-inner">
+          <div class="row justify-content-center vh-100">
+            <div class="col-8">
+              <div class="pt-4 position-relative">
+                
+                <div class="row mt-5">
+                  <div class="col text-center mt-3">
+
+                    <a href="#" style="color:inherit">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                        <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                      </svg>
+                    </a>
+                    
+                  </div>
+                </div>
+
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="position-absolute bottom-0 start-50 translate-middle-x">
+          <small style="color:#fff;">copyright &copy; 2023 CraterDAO</small>
+        </div>
+      </footer> -->
+
+    </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+      window.addEventListener('scroll', function() {
+        const navEle = document.getElementById('navbar_top')
+          if (window.scrollY > 200) {
+            navEle.classList.add('fixed-top');
+            navEle.classList.remove('d-none');
+            // document.getElementById('navbar_top').classList.add('fixed-top').remove('d-none');
+            // add padding top to show content behind navbar
+            // navbar_height = document.querySelector('.navbar').offsetHeight;
+            // document.body.style.paddingTop = navbar_height + 'px';
+          } else {
+            navEle.classList.remove('fixed-top');
+            navEle.classList.add('d-none');
+            // document.getElementById('navbar_top').classList.remove('fixed-top');
+            // remove padding top from body
+            // document.body.style.paddingTop = '0';
+          } 
+      });
+    }); 
+    </script>
+    <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+  </body>
+</html>

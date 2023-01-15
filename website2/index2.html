@@ -1,0 +1,288 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Crater DAO</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/"> -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="cover.css" rel="stylesheet"> -->
+    <style>
+      body {
+        background: #000;
+        color: white;
+      }
+
+      .header {
+        width: 100%;
+        background: url('./images/bg-top.png') top no-repeat;
+        min-height: 600px;
+        position: relative;
+      }
+      .header-text {
+        padding-top: 100px;
+        font-family: 'Righteous', cursive;
+      }
+      .header-sub {
+        position: absolute;
+        bottom: 0;
+        color: rgb(34, 34, 34);
+        font-style: italic;
+      }
+
+      .section1 {
+        background-color: #4d68ad;
+        background-image: url('./images/black-felt.png');
+      }
+
+      .section2 {
+        background-color: #000;
+      }
+
+      .footer {
+        background: url('./images/bg-bottom.jpg') bottom no-repeat fixed;
+        background-size: cover;
+        position: relative;
+        min-height: 200px;
+      }
+      .copyr {
+        position: absolute;
+        bottom: 0;
+      }
+
+      .navbar {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .navbar-brand, .nav-link, .nav-link.active {
+        color: #fff;
+      }
+    </style>
+
+  </head>
+
+  <body class="">
+
+    <div class="container">
+      <div class="header">
+        
+        <div class="header-text text-center rellax" data-rellax-speed="-4">
+          <h1 class="display-1 text-center">CraterDAO</h1>
+          <div class="lead">Crypto For Good</div>
+        </div>
+
+        <div class="header-sub">
+          <div class="row justify-content-center pb-3 pb-md-5">
+            <div class="col-11 col-md-6 text-center lead">
+              "CraterDAO was created with the goal of being an effective, efficient, and productive entity that stood in the way of any future occurrences of avoidable-loss."
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <nav id="navbar_top" class="navbar bg-body-tertiary d-none">
+        <div class="container">
+          <a class="navbar-brand" href="#">CraterDAO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Page 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page 2</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col">
+          <div class="section1 py-5 p-2 text-md-center">
+
+            <h2>Check out some NFTs</h2>
+            <div class="lead">Proceeds go to CraterDAO Treasury</div>
+            
+            <div class="row mt-4">
+              <div class="col">
+                <nft-card
+                contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+                tokenId="103585486754356315769129616507038656000299018771773154543038583250115536879617">
+                </nft-card>
+              </div>
+            </div>
+            
+            <div class="row mt-4">
+              <div class="col">
+                <nft-card
+                contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+                tokenId="103585486754356315769129616507038656000299018771773154543038583245717490368513">
+                </nft-card>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col">
+          <div class="section2 py-5">
+
+            <div class="row justify-content-center">
+              <div class="col-10">
+                <h2 class="text-md-center mb-3">Send us Something</h2>
+
+                <div class="card">
+                  <div class="card-body text-dark">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                      <!--Grid row-->
+                      <div class="row">
+      
+                          <!--Grid column-->
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                <label for="name" class="">Your name</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                                  
+                              </div>
+                          </div>
+                          <!--Grid column-->
+      
+                          <!--Grid column-->
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                <label for="email" class="">Your email</label>
+                                <input type="text" id="email" name="email" class="form-control">
+                                  
+                              </div>
+                          </div>
+                          <!--Grid column-->
+      
+                      </div>
+                      <!--Grid row-->
+      
+                      <!--Grid row-->
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="md-form mb-0">
+                                <label for="subject" class="">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <!--Grid row-->
+      
+                      <!--Grid row-->
+                      <div class="row">
+      
+                          <!--Grid column-->
+                          <div class="col-md-12">
+      
+                              <div class="md-form">
+                                <label for="message">Your message</label>
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                  
+                              </div>
+      
+                          </div>
+                      </div>
+                      <!--Grid row-->
+      
+                  </form>
+
+                  <div class="text-center text-md-left mt-3">
+                    <a class="btn btn-primary">Send</a>
+                  </div>
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="footer py-5">
+            
+            <div class="text-center">
+              <a href="https://discord.gg/8KrBydgUnj" target="_blank" style="color:inherit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                  <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="copyr text-center" style="width:100%;">
+              copyright &copy; CratorDAO
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <!-- <script src="../../assets/js/vendor/popper.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+    <script>
+      $(() => {
+        var rellax = new Rellax('.rellax');
+      })
+    
+      document.addEventListener("DOMContentLoaded", function(){
+      window.addEventListener('scroll', function() {
+        const navEle = document.getElementById('navbar_top')
+          if (window.scrollY > 400) {
+            navEle.classList.add('fixed-top');
+            navEle.classList.remove('d-none');
+            // document.getElementById('navbar_top').classList.add('fixed-top').remove('d-none');
+            // add padding top to show content behind navbar
+            // navbar_height = document.querySelector('.navbar').offsetHeight;
+            // document.body.style.paddingTop = navbar_height + 'px';
+          } else {
+            navEle.classList.remove('fixed-top');
+            navEle.classList.add('d-none');
+            // document.getElementById('navbar_top').classList.remove('fixed-top');
+            // remove padding top from body
+            // document.body.style.paddingTop = '0';
+          } 
+      });
+    }); 
+    </script>
+  </body>
+</html>
